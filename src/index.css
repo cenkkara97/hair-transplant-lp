@@ -519,12 +519,12 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(154, 128, 107, 0.3);
 }
-
 .video-container::before {
   content: "";
   display: block;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 66.25%; /* 16:9 Aspect Ratio */
 }
+
 
 .video-container iframe {
   position: absolute;
@@ -558,16 +558,6 @@ body {
   box-shadow: 0 0 40px rgba(154, 128, 107, 0.9);
 }
 
-.play-button::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 25px solid white;
-  margin-left: 5px;
-}
 
 /* Pricing cards */
 .pricing-card {

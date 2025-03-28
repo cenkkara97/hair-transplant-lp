@@ -10,6 +10,7 @@ import WhatsAppFloat from "./components/WhatsAppFloat"
 // Lazy loaded components for better performance
 const About = lazy(() => import("./components/About"))
 const BeforeAfter = lazy(() => import("./components/BeforeAfter"))
+const VideoSection = lazy(() => import("./components/VideoSection"))
 const Testimonials = lazy(() => import("./components/Testimonials"))
 const Journey = lazy(() => import("./components/Journey"))
 const Packages = lazy(() => import("./components/Packages"))
@@ -60,6 +61,15 @@ function App() {
           }
         >
           <BeforeAfter />
+        </Suspense>
+        <Suspense
+          fallback={
+            <div className="py-4">
+              <Loading />
+            </div>
+          }
+        >
+          <VideoSection />
         </Suspense>
         <Suspense
           fallback={

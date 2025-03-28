@@ -64,11 +64,11 @@ const VideoSection = () => {
     <section id="video-section" className="section-padding bg-dark" ref={sectionRef}>
       <div className="container-wide mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat text-white">
             Success <span className="text-gradient">Stories</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-6"></div>
-          <p className="text-gray-light max-w-3xl mx-auto">
+          <p className="text-white max-w-3xl mx-auto">
             Watch testimonials from our patients and learn more about our premium hair transplantation procedures.
           </p>
         </div>
